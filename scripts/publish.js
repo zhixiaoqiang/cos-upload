@@ -1,0 +1,20 @@
+const chalk = require('chalk')
+const execa = require('execa')
+const bumpVersion = require('./bump-version')
+
+;(async () => {
+  console.log('publish start...')
+  const isConfirm = await bumpVersion()
+  const stdio = { stdio: 'inherit' }
+  if (isConfirm) {
+    // await execa('yarn', ['release'], stdio)
+    await execa('yarn', ['publish'], stdio)
+
+    console.log(chalk.green('publish successful.'))
+  }
+})().catch((err) => {
+  console.log(err)
+  err.stderr && console.error(err.stderr)
+  err.stdout && console.error(err.stdout)
+  process.exit(1)
+})

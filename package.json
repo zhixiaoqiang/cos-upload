@@ -10,8 +10,14 @@
     "dayjs": "^1.8.16"
   },
   "description": "cos-upload",
-  "devDependencies": {},
+  "devDependencies": {
+    "chalk": "^2.4.2",
+    "execa": "^3.2.0",
+    "inquirer": "^7.0.0",
+    "semver": "^6.3.0"
+  },
   "scripts": {
+    "publish": "node scripts/publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
