@@ -7,10 +7,11 @@ const bumpVersion = require('./bump-version')
   const isConfirm = await bumpVersion()
   const stdio = { stdio: 'inherit' }
   if (isConfirm) {
-    const version = process.env.VERSION
+    // const version = process.env.VERSION
 
     await execa('yarn', ['release'], stdio)
-    await execa('yarn', ['publish', '--tag', version], stdio)
+    // await execa('yarn', ['publish', '--tag', version], stdio)
+    await execa('yarn', ['publish'], stdio)
 
     console.log(chalk.green('publish successful.'))
   }
