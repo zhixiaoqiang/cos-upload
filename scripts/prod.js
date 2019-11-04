@@ -5,7 +5,6 @@ const bumpVersion = require('./bump-version')
 ;(async () => {
   console.log('publish start...')
   const isConfirm = await bumpVersion()
-  console.warn(isConfirm)
   const stdio = { stdio: 'inherit' }
   if (isConfirm) {
     const version = process.env.VERSION

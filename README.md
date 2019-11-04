@@ -47,4 +47,3 @@ UploadFileInstance.upload({
 ```js
  yarn prod
 ```
-
