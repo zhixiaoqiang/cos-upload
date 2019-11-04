@@ -1,4 +1,6 @@
-# COS_UPLOAD
+# @jzone/cosupload
+
+> tencent-cos的二次封装，可根据入参决定用固定Secret或tmpSecret
 
 ## 使用
 
