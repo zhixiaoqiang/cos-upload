@@ -41,3 +41,10 @@ UploadFileInstance.upload({
 })
 
 ```
+
+## 发布
+
+```js
+ yarn prod
+```
+
