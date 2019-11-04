@@ -1,0 +1,20 @@
+{
+  "name": "@jzone/cosupload",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "zhixiaoqiang",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cos-js-sdk-v5": "^0.5.20",
+    "dayjs": "^1.8.16"
+  },
+  "description": "cos-upload",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cos"
+  ]
+}
