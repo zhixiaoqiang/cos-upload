@@ -2,6 +2,17 @@
 
 > tencent-cos的二次封装，可根据入参决定用固定Secret或tmpSecret
 
+## 安装
+
+```bash
+# Using yarn
+yarn add @sentry/node@5.7.1
+
+# Using npm
+npm install @sentry/node@5.7.1
+```
+
+
 ## 使用
 
 ### 固定SecretId、SecretKey
