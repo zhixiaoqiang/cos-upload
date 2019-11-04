@@ -1,7 +1,7 @@
 import COS from 'cos-js-sdk-v5'
 import Api from 'axios'
 import dayJs from 'dayjs'
-import { randomString } from 'utils'
+import { randomString } from './utils'
 
 const instance = Api.create({
   withCredentials: true,
