@@ -15,6 +15,9 @@ module.exports = async function bumpVersion () {
     value: b,
   }))
 
+  console.warn('versions', versions)
+  console.warn('bumpChoices', bumpChoices)
+
   const { bump, customVersion } = await inquirer.prompt([
     {
       name: 'bump',

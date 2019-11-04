@@ -17,7 +17,7 @@
     "semver": "^6.3.0"
   },
   "scripts": {
-    "publish": "node scripts/publish",
+    "prod": "node scripts/prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
