@@ -100,7 +100,7 @@ class UploadFile {
     }, function (err, data) {
       that.handleResult({
         err,
-        data,
+        data: `http://${data.Location}`,
         fail,
         success,
       })
