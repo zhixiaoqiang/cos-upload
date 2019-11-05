@@ -1,9 +1,9 @@
 {
   "name": "@jzone/cosupload",
   "version": "1.4.1",
-  "main": "dist/esm/index.js",
+  "main": "dist/umd/index.js",
   "module": "dist/cjs/index.js",
-  "browser": "dist/umd/index.js",
+  "browser": "dist/esm/index.js",
   "license": "MIT",
   "author": "zhixiaoqiang",
   "description": "tencent-cos的二次封装，可根据入参决定用固定Secret或tmpSecret",
