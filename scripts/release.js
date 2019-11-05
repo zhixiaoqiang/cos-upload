@@ -5,15 +5,15 @@ const dayJS = require('dayjs')
   console.log('release prod start')
   const version = process.env.VERSION
 
+  await execa(
+    'npm',
+    ['version', version, '-m', `chore: update version with tag v${version}`],
+    { stdout: 'inherit' }
+  )
   await execa('git', ['add', '-A'], { stdout: 'inherit' })
   await execa(
     'git',
     ['commit', '-am', `build: build production v${version} at ${dayJS().format('YYYY-MM-DD hh:mm:ss')}`],
-    { stdout: 'inherit' }
-  )
-  await execa(
-    'npm',
-    ['version', version, '-m', `chore: update version with tag v${version}`],
     { stdout: 'inherit' }
   )
   await execa('git', ['push', 'origin', `v${version}`], { stdout: 'inherit' })
