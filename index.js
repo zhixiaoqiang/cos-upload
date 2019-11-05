@@ -1,7 +1,7 @@
 import COS from 'cos-js-sdk-v5'
 import Api from 'axios'
 import dayJs from 'dayjs'
-import { randomString } from './utils'
+import { randomString } from './utils/index.js'
 
 const instance = Api.create({
   withCredentials: true,
@@ -152,17 +152,4 @@ class UploadFile {
   }
 }
 
-// const UploadFileInstance = new UploadFile({
-//   // SecretId: 'AKIDgHl9ZswjBVnBT0i2iN9rStvRzPk5l6sY',
-//   // SecretKey: 'mTDtLYihFj03tiKvLBvRmuoUyEHCuX4N',
-//   Bucket: 'oss-upload-1255721034',
-//   Region: 'ap-shanghai',
-//   defaultBasePath: '',
-//   tmpSecretUrl: '/sts',
-// })
-
 export default UploadFile
-
-export {
-  UploadFile,
-}

@@ -1,28 +1,44 @@
 {
   "name": "@jzone/cosupload",
   "version": "1.3.5",
-  "main": "index.js",
+  "main": "dist/esm/index.js",
+  "module": "dist/cjs/index.js",
+  "browser": "dist/umd/index.js",
   "license": "MIT",
   "author": "zhixiaoqiang",
-  "dependencies": {
-    "axios": "^0.19.0",
-    "cos-js-sdk-v5": "^0.5.20",
-    "dayjs": "^1.8.16"
-  },
+  "description": "tencent-cos的二次封装，可根据入参决定用固定Secret或tmpSecret",
   "repository": {
     "url": "https://github.com/zhixiaoqiang/cos-upload"
   },
-  "description": "tencent-cos的二次封装，可根据入参决定用固定Secret或tmpSecret",
-  "devDependencies": {
-    "chalk": "^2.4.2",
-    "execa": "^3.2.0",
-    "inquirer": "^7.0.0",
-    "semver": "^6.3.0"
-  },
   "scripts": {
+    "build": "NODE_ENV=production rollup -c",
     "prod": "node scripts/prod",
     "release": "node scripts/release",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "axios": "^0.19.0",
+    "core-js": "^3.3.6",
+    "cos-js-sdk-v5": "^0.5.20",
+    "dayjs": "^1.8.16"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "chalk": "^2.4.2",
+    "execa": "^3.2.0",
+    "inquirer": "^7.0.0",
+    "rollup": "^1.26.3",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-globals": "^1.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-terser": "^5.1.2",
+    "semver": "^6.3.0"
   },
   "keywords": [
     "cos"

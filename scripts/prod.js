@@ -9,8 +9,8 @@ const [ type ] = process.argv.slice(2)
   const isConfirm = await bumpVersion()
   const stdio = { stdio: 'inherit' }
   if (isConfirm) {
+    await execa('yarn', ['build'], stdio)
     await execa('yarn', ['release'], stdio)
-
     if (type === 'tag') {
       const version = process.env.VERSION
       await execa('yarn', ['publish', '--tag', version], stdio)
