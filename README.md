@@ -6,12 +6,14 @@
 
 ```bash
 # Using yarn
-yarn add @sentry/node@5.7.1
-
+yarn add @jzone/cosupload
+# tag
+yarn add @jzone/cosupload@1.3.0
 # Using npm
-npm install @sentry/node@5.7.1
+npm install @jzone/cosupload
+# tag
+npm install @jzone/cosupload@1.3.0
 ```
-
 
 ## 使用
 
@@ -57,6 +59,10 @@ UploadFileInstance.upload({
 
 ## 发布
 
-```js
+```bash
+ # base
  yarn prod
+
+ # tag
+ yarn prod tag
 ```
