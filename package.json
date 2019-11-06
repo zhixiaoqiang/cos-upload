@@ -41,6 +41,8 @@
     "semver": "^6.3.0"
   },
   "keywords": [
-    "cos"
+    "cos",
+    "rollup",
+    "uploadFile"
   ]
 }
