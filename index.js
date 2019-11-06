@@ -8,7 +8,6 @@ const instance = Api.create({
 })
 
 /**
- *
  * @author nazi
  * @class UploadFile 腾讯云上传文件类
  * @param {*} SecretId
@@ -70,13 +69,12 @@ class UploadFile {
 
     return {
       defaultBasePath: defaultBasePath || dayJs().format('YYYY/MM/DD'),
-      ...other,
       staticBucketConfig,
+      ...other,
     }
   }
 
-  /**
- *
+/**
  * @author nazi
  * @param {*} file 文件对象
  * @param {*} success 成功的回调函数
@@ -90,7 +88,6 @@ class UploadFile {
     const { defaultBasePath } = this.config
 
     if (!file) return console.warn('file is undefined')
-    // const path = file.name + +(new Date())
 
     const Key = `${basePath}/${defaultBasePath}/${randomString()}`
     this.cos.putObject({

@@ -40,7 +40,6 @@ export default {
       preferBuiltins:true,
     }), 
     common(),
-    
     json(),
     babel({
       exclude: 'node_modules/**', // 防止打包node_modules下的文件
