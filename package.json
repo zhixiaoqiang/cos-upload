@@ -1,6 +1,6 @@
 {
   "name": "@jzone/cosupload",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "main": "dist/umd/index.js",
   "module": "dist/cjs/index.js",
   "browser": "dist/esm/index.js",
