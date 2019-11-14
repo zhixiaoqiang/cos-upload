@@ -17,7 +17,6 @@ const instance = Api.create({
  * @param {*} tmpSecretUrl 获取临时Secret的url, 返回结果为 { data: {credentials, expiredTime } }
  * @param {*} defaultBasePath // 默认年/月/日/
  * @param {bool} returnFileUrl 是否返回文件地址
- *
  * @returns 暴露cos实例，可自行使用
  */
 class UploadFile {
