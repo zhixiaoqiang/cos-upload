@@ -15,7 +15,7 @@ const outputCommonOptions = {
 
 export default {
   input: 'index.js',
-  external: Object.keys(outputCommonOptions.globals),
+  // external: Object.keys(outputCommonOptions.globals),
   output: [
     {
       file: 'dist/cjs/index.js',
